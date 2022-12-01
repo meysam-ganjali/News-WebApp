@@ -1,0 +1,32 @@
+﻿.bg-primary,btn-primary {
+    background: #007bff;
+    color:#fff;
+}
+.bg-info,btn-info {
+    background: #17a2b8;
+    color: #fff;
+}
+.bg-warning, btn-warning {
+    background: #fd7e14;
+    color: #fff;
+}
+.bg-danger, btn-danger {
+    background: #dc3545;
+    color: #fff;
+}
+.bg-secondery, btn-secondery {
+    background: #6c757d;
+}
+.bg-dark,btn-dark {
+    background: #343a40;
+    color: #fff;
+}
+.bg-light, btn-light {
+    background: #f8f9fa;
+    color: #343a40;
+}
+.bg-success, btn-success {
+    background: #28a745;
+    color: #343a40;
+}
+/******************************/

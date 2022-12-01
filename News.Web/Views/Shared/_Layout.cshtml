@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="~/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/font-icons.css" />
     <link rel="stylesheet" href="~/css/style.css" />
+    <link rel="stylesheet" href="~/css/colors/CustomColor.css" />
+
 
     <!-- Favicons -->
     <link rel="shortcut icon" href="~/img/favicon.png">
@@ -62,7 +64,7 @@
                         <li><a href="about.html" class="sidenav__menu-url">دسته بندی ها</a></li>
                         <li><a href="contact.html" class="sidenav__menu-url">خبرها</a></li>
                         <li><a href="search-results.html" class="sidenav__menu-url">کاربران</a></li>
-                        
+
                     </ul>
                 </li>
 
@@ -107,30 +109,27 @@
 
                     <!-- Top menu -->
                     <div class="col-lg-6">
-                      <partial name="_TopMenu"/>
+                        <partial name="_TopMenu" />
                     </div>
 
                     <!-- Socials -->
                     <div class="col-lg-6">
-                        <partial name="_Socials"/>
+                        <partial name="_Socials" />
                     </div>
 
                 </div>
             </div>
         </div> <!-- end top bar -->
-
         <!-- Navigation -->
         <header class="nav">
 
-            <partial name="_Nav"/>
+            <partial name="_Nav" />
         </header> <!-- end navigation -->
-
-
-       @RenderBody()
+        @RenderBody()
 
         <!-- Footer -->
         <footer class="footer footer--light">
-            <partial name="_Footer"/> <!-- end container -->
+            <partial name="_Footer" /> <!-- end container -->
         </footer> <!-- end footer -->
 
         <div id="back-to-top">
@@ -138,8 +137,6 @@
         </div>
 
     </main> <!-- end main-wrapper -->
-
-
     <!-- jQuery Scripts -->
     <script src="~/js/jquery.min.js"></script>
     <script src="~/js/bootstrap.min.js"></script>
@@ -149,8 +146,8 @@
     <script src="~/js/twitterFetcher_min.js"></script>
     <script src="~/js/jquery.newsTicker.min.js"></script>
     <script src="~/js/modernizr.min.js"></script>
-<script src="~/js/scripts.js"></script>
-@await RenderSectionAsync("Scripts",false)
+    <script src="~/js/scripts.js"></script>
+    @await RenderSectionAsync("Scripts",false)
 
 </body>
 
