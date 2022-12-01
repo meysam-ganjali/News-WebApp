@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using News.Application.Repository;
+using News.Application.Repository.IRepository;
 using News.Web.Data;
 
 #region Variables
@@ -16,7 +18,7 @@ builder.Services.AddDbContext<DatabaseContext>(options =>
 
 builder.Services.AddDefaultIdentity<IdentityUser>()
     .AddEntityFrameworkStores<DatabaseContext>();
-
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();

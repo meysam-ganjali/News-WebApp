@@ -10,10 +10,10 @@ public class UnitOfWork:IUnitOfWork
     public UnitOfWork(DatabaseContext db)
     {
         _db = db;
-        //Category = new CategoryRepository(_db);
+        ParentCategory = new ParentCategoryRepository(_db);
     }
 
-    //public ICategoryRepositry Category { get; private set; }
+    public IParentCategoryRepository ParentCategory { get; private set; }
    
     public async Task SaveAsync()
     {

@@ -2,6 +2,6 @@
 
 public interface IUnitOfWork:IDisposable
 {
-    //ICategoryRepositry Category { get; }
+    IParentCategoryRepository ParentCategory { get; }
     Task SaveAsync();
 }

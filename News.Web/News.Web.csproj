@@ -22,6 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\News.Application\News.Application.csproj" />
     <ProjectReference Include="..\News.DataAccess\News.DataAccess.csproj" />
   </ItemGroup>
 
