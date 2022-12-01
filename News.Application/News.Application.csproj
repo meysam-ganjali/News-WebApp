@@ -6,4 +6,13 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Repository\IRepository\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\News.DataAccess\News.DataAccess.csproj" />
+    <ProjectReference Include="..\News.Utility\News.Utility.csproj" />
+  </ItemGroup>
+
 </Project>
