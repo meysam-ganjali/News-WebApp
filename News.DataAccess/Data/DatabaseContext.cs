@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using News.Domain.Models;
 
 namespace News.Web.Data;
 
@@ -11,6 +12,10 @@ public class DatabaseContext : IdentityDbContext<IdentityUser>
     {
     }
 
+    public DbSet<ParentCategory> ParentCategories { get; set; }
+    public DbSet<NewsCategory> NewsCategories { get; set; }
+    public DbSet<Newspaper> Newspapers { get; set; }
+    public DbSet<ApplicationUser> ApplicationUsers { get; set; }
     protected override void OnModelCreating(ModelBuilder builder)
     {
         base.OnModelCreating(builder);
